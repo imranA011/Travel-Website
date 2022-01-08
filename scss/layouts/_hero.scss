@@ -2,7 +2,7 @@
     @include flex(column, wrap, center, center);
     position: relative;
     height: 100vh;
-    background: blue;
+    background: $blue-50;
     
     .video-controls{
         background: transparent;
