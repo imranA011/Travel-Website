@@ -1,0 +1,35 @@
+
+
+    @mixin grid($minmax-value, $gap-value){
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax($minmax-value, 1fr));       
+        gap: $gap-value;
+    }
+
+    @mixin flex($direction, $wrap, $justify, $align){
+        display:flex;
+        flex-direction:$direction;
+        flex-wrap: $wrap;
+        justify-content:$justify;
+        align-items:$align;
+    }
+
+    @mixin font($size, $weight){
+        font-size: $size;
+        font-weight: $weight;   
+    }
+
+
+    // @mixin fade($fade, $timing, $length, $count, $fill){ 
+    //     animation: $fade $timing $length;
+    //     animation-iteration-count: $count; 
+    //     animation-fill-mode: $fill; 
+    // } 
+    // @keyframes fadeIn { 
+    //     0% { opacity: 0; } 
+    //     100% { opacity: 1; } 
+    // } 
+    // @keyframes fadeOut { 
+    //     0% { opacity: 1; } 
+    //     100% { opacity: 0; } 
+    // }

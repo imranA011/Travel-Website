@@ -1,0 +1,51 @@
+#about{
+    padding: 5rem 0;
+    .about-wrapper{
+        @include grid(41rem, 5rem);
+        margin-top: 1rem;
+        padding: 1rem 0;
+        
+        .image-column{
+            border: 1rem solid $white;
+            border-radius: .5rem;
+
+            img{      
+                height: 100%;
+            }
+        }
+        .content-column{
+            span{
+                @include font(1.8rem, 400);
+                color: $primary;
+                font-family: $font-title;
+                text-transform: uppercase;
+            }
+            h2{
+                @include font(4rem, 700);
+                padding: 1rem 0;
+                color: $black;
+                font-family: $font-body;
+                text-transform: capitalize;
+            }
+            p{
+                @include font(1.5rem, 400);
+                padding: 1rem 0;
+                color: $black-70;
+            }
+            .features{
+                @include font(1.6rem, 500);
+                padding: 1rem 0;
+                color: $black-50;
+                li{
+                    padding: .5rem 0;
+                }
+                i{
+                    margin-right: 2rem;
+                }
+            }
+            .btn-fill{
+                margin-top: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,200;1,700&display=swap');
+
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/mixins';
+
+@import 'components/button';
+@import 'components/heading';
+@import 'components/icons';
+@import 'components/form';
+@import 'components/animation';
+
+@import 'layouts/header';
+@import 'layouts/hero';
+@import 'layouts/features';
+@import 'layouts/about';
+@import 'layouts/tours';
+@import 'layouts/banner';
+@import 'layouts/destination';
+@import 'layouts/blog';
+@import 'layouts/contact';
+@import 'layouts/footer';
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 55%;
+    }        
+} 
+@media screen and (max-width:480px){
+    html{
+        font-size: 50%;
+    }
+          
+}
+
+
+
+
+
+

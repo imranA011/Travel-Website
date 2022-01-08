@@ -1,0 +1,128 @@
+
+#tour{
+    padding: 5rem 0;
+    .heading{
+        padding-top: 1rem;
+    }
+    .tour-wrap-outer{
+        @include flex(row, wrap, start, stretch);
+        width: 100%;        
+    }
+    .tour-wrap-inner{
+        @include flex(row, nowrap, start, stretch);
+        width: 33%;
+        padding: 1.5rem;
+        &:hover{
+            .tour-image::before{
+                opacity: 1;
+                z-index: 1111;
+            }
+        }
+
+
+        @media screen and (max-width:992px){
+            width: 50%;
+        }    
+        @media screen and (max-width:600px){
+            width: 100%;             
+        }
+    }
+    .single-tour{
+        @include flex(column, nowrap, start, start);
+        width: 100%;                
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8); 
+        background: $white;                 
+    }   
+    .tour-image{         
+        position: relative;
+        z-index: 111;
+        height: auto;
+        overflow: hidden;  
+        &:hover {
+            .img-overlay{
+                opacity: 1;
+            }
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            transition: all 0.5s linear;  
+        }
+        .img-overlay{
+            @include flex(column, wrap, center, center);
+            position: absolute; 
+            bottom: 0;
+            left: 0;               
+            width: 100%;
+            height: 100%;
+            background-color: rgba(247, 6, 206, 0.5);
+            padding: 3rem 2rem;
+            opacity:0;
+            transition: all 0.5s ease; 
+            cursor: pointer;   
+                                        
+        }
+    }     
+
+    .tour-content{
+        @include flex(column, nowrap, start, start);
+        flex-grow: 1;
+        padding: 2rem 2rem 3rem;
+        
+        .icon-container{
+            font-size: 1.5rem;
+            padding-bottom: .5rem;
+            
+            .fa-review{
+                color: $primary;
+            }
+            span{
+                font-weight: 700;
+                margin-left:.5rem ;
+            }
+        }
+        .title{
+            @include font(2.5rem, 700);
+        }
+        .price{
+            @include font(2rem, 700);
+            font-family: sans-serif;
+            color: $primary;
+            span{
+                @include font(1.5rem, 400);
+                color: $black;
+                padding-bottom: 1rem;
+                display: inline-block
+            }
+        }
+        .meta-content{
+            display: block;
+            width: 100%;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+            padding: 1rem 1.5rem;
+            border-radius: .3rem;
+            color: $black ;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            i{
+                padding-right:.5rem; 
+                color: $black-40;  
+            }
+        }
+        .text{
+            font-size: 1.5rem;
+            padding: 2rem 0; 
+            flex-grow: 1;
+        }
+        .tour-btn{
+            @extend .btn-fill;
+            text-align: center;            
+        }
+    }  
+}

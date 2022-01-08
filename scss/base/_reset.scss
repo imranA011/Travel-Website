@@ -1,0 +1,58 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    border: none;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+}
+body{
+    font-family: $font-body;
+    line-height: 1.5;
+    background: $body;   
+    transition: 0.3s linear;     
+}  
+
+h1, h2{
+    line-height: 1.2;
+}
+
+h3, h4, h5, h6{
+    line-height: 1.4;
+}
+p{
+    line-height: 2;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $black;
+}
+img{
+    width:100%!important;
+    display: block;
+}
+
+.container{
+    padding: 0 5%;    
+    max-width: 1440px;
+    margin:0 auto;
+}
+.container-fluid{   
+    max-width: 1440px;
+    margin:0 auto;
+}
+.float-left{
+    float:left;  
+}
+.float-right{
+    float:right;   
+}

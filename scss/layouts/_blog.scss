@@ -1,0 +1,49 @@
+/* =============================
+   Blog Section Starts
+ =============================== */
+
+ #blog{
+    padding: 6rem 0;
+    background: $white-50;
+    .container{
+        .blog-heading{
+            @extend .heading;
+        }
+        .blog-post-wrapper{
+            @include grid(28rem, 2rem);
+            .single-post{
+                .post-body{
+                    padding:0 1rem ;
+                    .post-category{
+                        @extend .cat-btn;
+                        margin-top: 2rem;
+                    }                   
+                    .post-title{
+                        @include font(2rem, 700);
+                        padding: .8rem 0;
+                        color: $primary;
+                    }
+                    .post-meta{
+                        @include font(1.5rem, 500);
+                        margin-bottom: 1.5rem;
+                        
+                    }
+                    .post-content{
+                        @include font(1.5rem, 400);
+                    }
+                }
+                .post-footer{
+                    padding:0 1rem;
+                    .btn-blog{
+                        @extend .btn;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* =============================
+Blog Section End
+=============================== */

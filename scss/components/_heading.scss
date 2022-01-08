@@ -1,0 +1,28 @@
+
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    span{
+        @include font(2rem, 400);
+        font-family: $font-title;
+        color: $primary;
+        text-transform: uppercase;
+    }
+    h3{
+        @include font(4.5rem, 700);
+        color: $black;
+        font-family: $font-body;
+        text-transform: capitalize;
+    }
+}
+
+.single-heading{
+    @include font(4rem, 700);
+    padding: 2rem 0;
+    color: $black;
+    font-family: $font-body;
+    text-transform: capitalize;
+    text-align: center;
+
+}

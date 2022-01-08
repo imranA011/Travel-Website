@@ -1,0 +1,31 @@
+.form-lg{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+
+    .input-box{
+        display: block;
+        color: $black-90;
+        margin-top: 1.5rem;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="datetime"],
+        textarea{
+            width: 100%;
+            display: block;
+            padding:1.5rem;          
+            border-radius: .3rem;
+            font-size: 1.6rem;
+            &::placeholder{
+                color: $black-50;
+            }
+        }
+    } 
+}
+
+
+
+
+
+
