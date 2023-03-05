@@ -582,6 +582,7 @@ img {
           align-items: center;
   position: relative;
   height: 100vh;
+  background: rgba(255, 0, 255, 0.2);
 }
 
 #hero .video-controls {
